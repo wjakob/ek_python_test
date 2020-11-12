@@ -38,5 +38,5 @@ pybind11_add_module(_ek_python_test MODULE src/ek_python_test.cpp)
 target_link_libraries(_ek_python_test PRIVATE enoki enoki-jit)
 
 # Install directives for skikit-build
-install(DIRECTORY ek_python_test DESTINATION ek_python_test)
+install(DIRECTORY pysrc/ DESTINATION ./ek_python_test)
 install(TARGETS _ek_python_test LIBRARY DESTINATION ek_python_test)
